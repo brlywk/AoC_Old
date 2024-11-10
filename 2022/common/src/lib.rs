@@ -1,6 +1,7 @@
 use anyhow::*;
 use std::{fs::read_to_string, path::Path};
 
+#[derive(Debug)]
 pub struct Input {
     pub content: String,
     pub lines: Vec<String>,
@@ -29,5 +30,5 @@ fn read_file(input_path: impl AsRef<Path>) -> Result<String> {
 
 pub mod prelude {
     pub use super::Input;
-    pub use anyhow::*;
+    pub use anyhow;
 }
