@@ -11,8 +11,7 @@ else
     cargo init --name "day$day"
     echo "common = { path = \"../common\" }" >> Cargo.toml
     mkdir inputs
-    touch inputs/pt1_input.txt inputs/pt1_test.txt
-    touch inputs/pt2_input.txt inputs/pt2_test.txt
+    touch inputs/input.txt inputs/test.txt
 
     # workspace modifications
     cd ..
